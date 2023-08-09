@@ -1,0 +1,27 @@
+<div id="wrapper">
+    <object id="logo" type="image/svg+xml" data="assets/logo-no-background.svg" width="350" height="87">
+        <img src="assets/logo-no-background.png" alt="Logo" width="350" height="87">
+    </object>
+    <div id="log-in">
+        <h2>Username:</h2>
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
+            <mat-label>Username</mat-label>
+            <input matInput id="login-username" #username placeholder="Username">
+            <mat-icon matPrefix>account_circle</mat-icon>
+        </mat-form-field>
+        <h2>Password:</h2>
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
+            <mat-label>Password</mat-label>
+            <input matInput id="login-password"  #password placeholder="Password">
+            <mat-icon matPrefix>lock</mat-icon>
+        </mat-form-field>    
+        <button mat-raised-button (click)="log_in(username.value, password.value)">
+            <mat-icon matPrefix>login</mat-icon>
+            Log In
+        </button>
+        <button mat-raised-button>
+            <mat-icon matPrefix>person_add</mat-icon>
+            Sign Up
+        </button>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+mat-form-field {
+    font-family: raleway, sans-serif;
+    margin-left: 75px;
+    width: 250px;
+}
+
+h2 {
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3C3C3C;
+
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #3C3C3C;
+}
+
+#logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#log-in {
+    font-family: raleway, sans-serif;
+
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 275px;
+
+    border-width: 3px;
+    border-radius: 40px;
+    border-color: #9722BF;
+    border-style: solid;
+    font-weight: 400;
+}
+
+#log-in button {
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #9722BF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 75px;
+}
