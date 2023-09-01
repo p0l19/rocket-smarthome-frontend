@@ -8,11 +8,17 @@ import {MatIcon, MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
+import { PlugServiceService } from './plug-service.service';
+import { HttpClientModule } from '@angular/common/http';
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogInComponent
+    LogInComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +27,16 @@ import {MatButtonModule} from '@angular/material/button';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    LoggerModule.forRoot({ 
+      level: NgxLoggerLevel.INFO, 
+      disableConsoleLogging: false,
+      
+    }),
+    MatListModule
   ],
-  providers: [],
-  bootstrap: [AppComponent, LogInComponent]
+  providers: [PlugServiceService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

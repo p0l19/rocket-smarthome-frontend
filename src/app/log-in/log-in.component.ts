@@ -18,7 +18,7 @@ export class LogInComponent {
   log_in(username: String, uassword:String) {
     if (username == this.username && uassword == this.password) {
       alert('Login successful');
-      document.getElementById('login-form').value = '';
+      //document.getElementById('login-form').value = '';
     }
     else {
       alert('Login failed');
