@@ -8,7 +8,11 @@
     <div id="device-wrapper">
         <h2>Devices</h2>
         <mat-list role="list" *ngFor="let plug of plugs">
-            <mat-list-item>Banane</mat-list-item>
+            <mat-list-item>{{plug.name}}</mat-list-item>
+            <mat-list-item>{{plug.state}}</mat-list-item>
+            <mat-list-item>{{plug.schedule}}</mat-list-item>
+            <mat-list-item>{{plug.powerconsumption}} kWh</mat-list-item>
+            <mat-list-item>{{plug.duration.secs}} seconds</mat-list-item>
         </mat-list>
     </div>
 </div>
